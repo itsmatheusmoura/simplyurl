@@ -3,8 +3,8 @@ module.exports = {
     dialect: 'postgres',
     host: process.env.HOST,
     username: 'postgres',
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE_NAME,
+    password: 'docker',
+    database: 'dburlshrink',
     define:{
         timestamps: true,
         underscored: true,
