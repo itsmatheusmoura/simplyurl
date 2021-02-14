@@ -1,9 +1,10 @@
+import 'dotenv'
 module.exports = {
     dialect: 'postgres',
-    host: 'localhost',
+    host: process.env.HOST,
     username: 'postgres',
-    password: 'docker',
-    database: 'dburlshrink',
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME,
     define:{
         timestamps: true,
         underscored: true,
